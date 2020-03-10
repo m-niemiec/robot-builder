@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="87e7a1b2-ff7c-4fac-80b7-f07bfb1aa3fe" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Yj15OAJjGtORM4qakttspzS2st" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.r.configuration.RActiveInterpreterProjectConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="pytest in test_scratch.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="robot_builder" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/builder" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/builder/test_scratch.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.pytest in test_scratch.py" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="87e7a1b2-ff7c-4fac-80b7-f07bfb1aa3fe" name="Default Changelist" comment="" />
+      <created>1583441005872</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583441005872</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1583691870455">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1583691870455" />
+    <state width="1899" height="295" key="GridCell.Tab.0.bottom" timestamp="1583708576577">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1583708576577" />
+    <state width="1899" height="295" key="GridCell.Tab.0.center" timestamp="1583708576577">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="295" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1583708576577" />
+    <state width="1899" height="295" key="GridCell.Tab.0.left" timestamp="1583708576576">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="295" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1583708576576" />
+    <state width="1899" height="295" key="GridCell.Tab.0.right" timestamp="1583708576577">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="295" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1583708576577" />
+    <state x="461" y="182" key="SettingsEditor" timestamp="1583784525248">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="461" y="182" key="SettingsEditor/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1583784525248" />
+    <state x="656" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1583869208158">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="656" y="364" key="com.intellij.ide.util.TipDialog/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1583869208158" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/manage.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
