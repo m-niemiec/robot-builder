@@ -1,47 +1,77 @@
+{% extends "builder/base.html" %}
+{% load static %}
+
+{% block content %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <meta charset="UTF-8">
     <title>Robot Builder</title>
 </head>
 <body>
-<h1>Build your own robot here:</h1>
 
-<form action="{% url 'your_robot' %}">
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+    <h1 class="display-4">Build your own robot here:</h1>
+    <p class="lead">
+        <form action="{% url 'your_robot' %}">
+        <div class="form-group row">
+            <label for="name" class="col-sm-2 col-form-label">Name:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="name" id="name" placeholder="Put your robot's name here. It is not required.">
+            </div>
+        </div>
 
+        <div class="form-group row">
+            <label for="height" class="col-sm-2 col-form-label">Height:</label>
+            <div class="col-sm-10">
+                <select class="form-control" name="height" id="height">
+                    <option value="2">2 Units</option>
+                    <option value="3">3 Units</option>
+                    <option value="4" selected="selected">4 Units</option>
+                    <option value="5">5 Units</option>
+                </select>
+            </div>
+        </div>
 
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" placeholder="You can leave it empty">
+        <fieldset class="form-group">
+            <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Type:</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="status" id="friendly" value="friendly" autofocus required="required">
+                        <label class="form-check-label" for="friendly">Friendly</label>
+                    </div>
 
-    <br><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="status" id="hostile" value="hostile" required="required">
+                        <label class="form-check-label" for="hostile">Hostile</label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
 
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" name="message" id="message" maxlength="100" rows="3" placeholder="Max: 100
+            characters. If you leave it blank, your robot will come up with some greetings for you."></textarea>
+        </div>
 
-    Height:
-    <select name="height">
-        <option value="2">2 Units</option>
-        <option value="3">3 Units</option>
-        <option value="4" selected="selected">4 Units</option>
-        <option value="5">5 Units</option>
-    </select>
-    <br><br>
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <button type="submit" class="btn btn-success btn-lg">Build it!</button>
+                <button type="reset" class="btn btn-danger btn-lg">Reset</button>
+            </div>
+        </div>
+    </form>
+        </p>
+    </div>
+</div>
 
-
-    Type:
-    <input type="radio" id="friendly" name="status" value="friendly">
-    <label for="friendly">Friendly</label>
-    <input type="radio" id="hostile" name="status" value="hostile">
-    <label for="hostile">Hostile</label>
-    <br><br>
-
-    Message:
-    <br>
-    <textarea name="myTextArea"cols="40" rows="4" placeholder="Max: 100 characters. If you leave it blank, your robot will come up with some greetings for you."></textarea>
-    <br><br>
-
-
-    <input type="reset" value="Reset your work">
-    <br><br>
-    <input type="submit" value="Build robot !">
-</form>
 </body>
 </html>
+
+{% endblock %}

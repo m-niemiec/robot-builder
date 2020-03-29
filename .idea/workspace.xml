@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87e7a1b2-ff7c-4fac-80b7-f07bfb1aa3fe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/robot_builder.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/robot_builder.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder/templates/builder/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/builder/templates/builder/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder/templates/builder/builder.html" beforeDir="false" afterPath="$PROJECT_DIR$/builder/templates/builder/builder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder/templates/builder/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/builder/templates/builder/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/builder/templates/builder/your_robot.html" beforeDir="false" afterPath="$PROJECT_DIR$/builder/templates/builder/your_robot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/builder/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot_builder/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot_builder/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot_builder/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot_builder/urls.py" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,12 +39,46 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.r.configuration.RActiveInterpreterProjectConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.scratch_6">
+    <configuration name="scratch_6" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="robot_builder" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_6.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest in test_scratch.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="robot_builder" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -52,6 +96,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.scratch_6" />
         <item itemvalue="Python tests.pytest in test_scratch.py" />
       </list>
     </recent_temporary>
@@ -69,35 +114,49 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1583691870455">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1583691870455" />
-    <state width="1899" height="295" key="GridCell.Tab.0.bottom" timestamp="1583708576577">
+    <state width="1899" height="148" key="GridCell.Tab.0.bottom" timestamp="1583968578902">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1583708576577" />
-    <state width="1899" height="295" key="GridCell.Tab.0.center" timestamp="1583708576577">
+    <state width="1899" height="148" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1583968578902" />
+    <state width="1899" height="148" key="GridCell.Tab.0.center" timestamp="1583968578902">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="295" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1583708576577" />
-    <state width="1899" height="295" key="GridCell.Tab.0.left" timestamp="1583708576576">
+    <state width="1899" height="148" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1583968578902" />
+    <state width="1899" height="148" key="GridCell.Tab.0.left" timestamp="1583968578902">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="295" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1583708576576" />
-    <state width="1899" height="295" key="GridCell.Tab.0.right" timestamp="1583708576577">
+    <state width="1899" height="148" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1583968578902" />
+    <state width="1899" height="148" key="GridCell.Tab.0.right" timestamp="1583968578902">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="295" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1583708576577" />
+    <state width="1899" height="148" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1583968578902" />
     <state x="461" y="182" key="SettingsEditor" timestamp="1583784525248">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="182" key="SettingsEditor/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1583784525248" />
-    <state x="656" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1583869208158">
+    <state x="656" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1584040799867">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="656" y="364" key="com.intellij.ide.util.TipDialog/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1583869208158" />
+    <state x="656" y="364" key="com.intellij.ide.util.TipDialog/-1920.0.1920.1080/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1584040799867" />
+    <state x="656" y="364" key="com.intellij.ide.util.TipDialog/0.0.1920.1080/1920.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1583955560602" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -106,6 +165,11 @@
           <url>file://$PROJECT_DIR$/manage.py</url>
           <line>2</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/robot_builder/urls.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

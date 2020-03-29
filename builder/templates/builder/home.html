@@ -1,13 +1,114 @@
+{% extends "builder/base.html" %}
+{% load static %}
+
+{% block content %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <meta charset="UTF-8">
     <title>Robot Builder</title>
 </head>
 <body>
-<h1>Robot Builder Home Page</h1>
 
-<a href="{% url "builder" %}"><h2>Build your own robot !</h2></a>
-<a href="{% url "about" %}">About</a>
-</body>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Robot Builder</h1>
+        <p class="lead">Build your own awesome robot ! Name it, set it's height, choose if he is friendly or not and even
+        set it's message for you. And on top of that, randomize it's look! Great fun time guaranteed for whole family!</p>
+        <hr class="my-4">
+        <center>
+
+            <a href="{% url "builder" %}" class="btn btn-success btn-lg" role="button">Build your own robot !</a><br><br>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+                Help! I don't know what to do. Wh - what am I doing in this reality?
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Relax!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p><b>Nothing is happening. You are on this site for fun, and you can build your robot here.</b></p> <br><br>
+                            <ul>
+                                <li>If you want to build your robot, simply click "Build your own robot!" (big green button above this one)</li><br>
+                                <li>If you want to close, press "close".</li><br>
+                                <li>If you don't know what are you doing in general, seek for help, I am simple website written on django with help of python, html, css and a little bit of javascript. I cannot help you.</li>
+                            </ul><br><br>
+
+                            <b>F.A.Q - Our frequently asked questions:</b><br><br>
+                            <b>Q:</b> Will I be able to build a real robot here?<br>
+                            <b>A:</b> Sadly, no. This is only website for fun, you won't build actuall, physical robots here.<br><br>
+
+                            <b>Q:</b> If I build "hostile" robot, can it hurt me?<br>
+                            <b>A:</b> Happily, no. This robots are not real, they won't hurt you.<br><br>
+
+                            <b>Q:</b> If I have question that wasn't listed here, where can I ask them?<br>
+                            <b>A:</b> You can send me a question or anything on this email addres - <b>michal.niemiec.it *at* gmail.com</b> Do not hesitate, thank you.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+
+        <hr class="my-4">
+        <div class="carousel_1">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" >
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" >
+                    <div class="carousel-item active" >
+                        <img src="/media/heads_banner.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Build from 6 different heads!</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/media/bodys_banner.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Build from 6 different bodys!</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/media/legs_banner.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Build from 3 different legs!</h3>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span></a>
+
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span></a>
+            </div>
+        </div>
+        <hr class="my-4">
+    </div>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
 </html>
+
+{% endblock %}
