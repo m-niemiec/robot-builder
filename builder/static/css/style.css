@@ -1,132 +1,99 @@
 html {
-background: #343a40;
+     background: #343a40;
 }
-
-h3 {
-color: #343a40;
+ h3 {
+     color: #343a40;
 }
-
-p {
-color: #000000;
+ p {
+     color: #343a40;
 }
-
-div.navbar-nav {
-color: 00ff00;
+ div.navbar-nav {
+     color: 00ff00;
 }
-
-.carousel-control-next,
-.carousel-control-prev {
-    filter: invert(100%);
+ .carousel-control-next, .carousel-control-prev {
+     filter: invert(100%);
 }
-
-img#head {
-scale: 3.5;
-z-index: 5;
+ img#head {
+     scale: 3.5;
+     z-index: 5;
 }
-
-img#id_body_1 {
-
-scale: 3.1;
-    z-index: 4;
-           }
-  img#id_body_2 {
-
-    scale: 3.1;
-    z-index: 3;
-           }
-  img#id_body_3 {
-
-    scale: 3.1;
-    z-index: 2;
-           }
-
-   img#legs {
-
-    scale: 3;
-    z-index: 1;
+ img#id_body_1 {
+     scale: 3.1;
+     z-index: 4;
 }
-   img#comic_bubble {
-    position: relative;
-    left: 25%;
-    top: -50px;
-    scale: 3.5;
-    z-index: 6;
+ img#id_body_2 {
+     scale: 3.1;
+     z-index: 3;
 }
-
-#comic_bubble_text {
-
-    position: relative;
-    left: 24%;
-    top: -180px;
-    scale: 1;
-    z-index: 999;
-    width: 300px;
-    overflow-wrap: break-word;
-    height: 0;
-
-        }
-
-
-
-   img#myimage {
-    position: relative;
-    left: 25%;
-    scale: 16;
-    z-index: 9;
+ img#id_body_3 {
+     scale: 3.1;
+     z-index: 2;
 }
-
-#fadeout {
-    position: relative;
-    top: 50%;
-    left: 0%;
-
+ img#legs {
+     scale: 3;
+     z-index: 1;
 }
-
-
-
-img#id_cloud_1 {
-  position: absolute;
-  bottom: 700%;
-  left: 55%;
-    scale: 14;
-    z-index: 11;
-      opacity: 1;
-  transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -webkit-transition: opacity 1s ease-in-out;
-           }
-img#id_cloud_2 {
-    position: absolute;
-    left: 45%;
-    bottom: 450%;
-    scale: 14;
-    z-index: 12;
-          opacity: 1;
-  transition: opacity 1.5s ease-in-out;
-  -moz-transition: opacity 1.5s ease-in-out;
-  -webkit-transition: opacity 1.5s ease-in-out;
-           }
-img#id_cloud_3 {
-    position: absolute;
-    left: 50%;
-    bottom: 150%;
-    scale: 14;
-    z-index: 13;
-          opacity: 1;
-  transition: opacity 2s ease-in-out;
-  -moz-transition: opacity 2s ease-in-out;
-  -webkit-transition: opacity 2s ease-in-out;
-           }
-
-#randomize {
-    z-index: 9999;
+ img#comic_bubble {
+     position: relative;
+     left: 25%;
+     top: -50px;
+     scale: 3.5;
+     z-index: 6;
 }
-
-
-
-/*
-.div_button {
-  position: relative;
-  top: 120%;
-
-}*/
+ #comic_bubble_text {
+     position: relative;
+     left: 24%;
+     top: -180px;
+     scale: 1;
+     z-index: 999;
+     width: 300px;
+     overflow-wrap: break-word;
+     height: 0;
+}
+ img#myimage {
+     position: relative;
+     left: 25%;
+     scale: 16;
+     z-index: 9;
+}
+ #fadeout {
+     position: relative;
+     top: 50%;
+     left: 0%;
+}
+ img#id_cloud_1 {
+     position: absolute;
+     bottom: 700%;
+     left: 55%;
+     scale: 14;
+     z-index: 11;
+     opacity: 1;
+     transition: opacity 1s ease-in-out;
+     -moz-transition: opacity 1s ease-in-out;
+     -webkit-transition: opacity 1s ease-in-out;
+}
+ img#id_cloud_2 {
+     position: absolute;
+     left: 45%;
+     bottom: 450%;
+     scale: 14;
+     z-index: 12;
+     opacity: 1;
+     transition: opacity 1.5s ease-in-out;
+     -moz-transition: opacity 1.5s ease-in-out;
+     -webkit-transition: opacity 1.5s ease-in-out;
+}
+ img#id_cloud_3 {
+     position: absolute;
+     left: 50%;
+     bottom: 150%;
+     scale: 14;
+     z-index: 13;
+     opacity: 1;
+     transition: opacity 2s ease-in-out;
+     -moz-transition: opacity 2s ease-in-out;
+     -webkit-transition: opacity 2s ease-in-out;
+}
+ #randomize {
+     z-index: 999;
+}

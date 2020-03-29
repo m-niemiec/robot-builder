@@ -15,54 +15,35 @@
 <body>
 
 <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">{{ robot_id }}
-    <br><button type="button" onClick="window.location.reload();" class="btn btn-info btn-lg" id="randomize">Randomize again!</button>
-    </h1>
-    <p class="lead">
-
-
-
-        <br><br>
-
-
-<center>
-
-
-      <img src="/media/comic_bubble.png" alt="Comic Text Bubble" width="100" id="comic_bubble"><br>
-      <div id="comic_bubble_text">
-          <p>{{ message }}</p>
+    <div class="container">
+        <h1 class="display-4">{{ robot_id }}
+            <br><button type="button" onClick="window.location.reload();" class="btn btn-info btn-lg" id="randomize">Randomize again!</button>
+        </h1>
+        <p class="lead">
+            <br><br><center>
+            <img src="/media/comic_bubble.png" alt="Comic Text Bubble" width="100" id="comic_bubble"><br>
+            <div id="comic_bubble_text">
+        {{ message }}</p>
     </div>
-<!--Random robot head-->
-<img src="/media/{{ head_number }}" alt="{{ head_number }}" width="200" id="head"><br>
-<!--Random robot body#1-->
-{{ body_element_1|safe}}
-<!--Random robot body#2-->
-{{ body_element_2|safe}}
-<!--Random robot body#3-->
-{{ body_element_3|safe}}
-<!--Random robot legs-->
-<img src="/media/{{ legs_number }}" alt="{{ legs_number }}" width="200" id="legs" >
-
-
-
-
-
-
-
-
-
-
-<div id="fadeout">
-    {% if amount_body_elements > 1 %}
-        {{ cloud_number_1|safe}}
-    {% endif %}
-    {{ cloud_number_2|safe}}
-    {{ cloud_number_3|safe}}
-
-</div>
-      </center>
-<script>
+    <!--Random robot head-->
+    <img src="/media/{{ head_number }}" alt="{{ head_number }}" width="200" id="head"><br>
+    <!--Random robot body#1-->
+    {{ body_element_1|safe}}
+    <!--Random robot body#2-->
+    {{ body_element_2|safe}}
+    <!--Random robot body#3-->
+    {{ body_element_3|safe}}
+    <!--Random robot legs-->
+    <img src="/media/{{ legs_number }}" alt="{{ legs_number }}" width="200" id="legs" >
+    <div id="fadeout">
+        {% if amount_body_elements > 1 %}
+            {{ cloud_number_1|safe}}
+        {% endif %}
+        {{ cloud_number_2|safe}}
+        {{ cloud_number_3|safe}}
+    </div>
+    </center>
+    <script>
 function displayOut() {
     var a = document.getElementById('id_cloud_1');
     setTimeout(function(){
@@ -78,23 +59,8 @@ function displayOut() {
     }, 400);
 }
 displayOut();
-</script>
-
-
-
-
-
-
-    </p>
-  </div>
+    </script>
 </div>
-
-
-
-
-
-
-
 
 </body>
 </html>
