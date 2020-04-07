@@ -27,9 +27,6 @@ def your_robot(request):
     # all_body_elements means how much body variations you have for each variant (hostile, friendly)
     all_body_elements = 3
 
-    for x in range(1, all_body_elements + 1):
-        globals()["body_element_{0}".format(x)] = ""
-
     legs_number = "legs_" + str(random.randint(1, 3)) + img_format
     id_cloud_number = 1
     for x in range(1, 4):
@@ -67,6 +64,7 @@ def your_robot(request):
         id_body_number += 1
 
         message += str(user_message)
+
 
     return render(request, "builder/your_robot.html", {"message": message, "head_number": head_number,
                                                        "body_element_1": body_element_1,

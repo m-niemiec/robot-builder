@@ -3,35 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="87e7a1b2-ff7c-4fac-80b7-f07bfb1aa3fe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/builder/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/builder/static/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/builder/templates/builder/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/builder/templates/builder/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/builder/templates/builder/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/builder/templates/builder/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder/templates/builder/builder.html" beforeDir="false" afterPath="$PROJECT_DIR$/builder/templates/builder/builder.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/builder/templates/builder/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/builder/templates/builder/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/builder/templates/builder/your_robot.html" beforeDir="false" afterPath="$PROJECT_DIR$/builder/templates/builder/your_robot.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/builder/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/builder/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/body_element_1_friendly.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/body_element_1_hostile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/body_element_2_friendly.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/body_element_2_hostile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/body_element_3_friendly.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/body_element_3_hostile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/bodys_banner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/cloud_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/cloud_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/cloud_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/comic_bubble.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/head_1_friendly.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/head_1_hostile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/head_2_friendly.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/head_2_hostile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/head_3_friendly.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/head_3_hostile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/heads_banner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/legs_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/legs_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/legs_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/legs_banner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/logo.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
