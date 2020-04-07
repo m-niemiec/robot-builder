@@ -27,6 +27,10 @@ def your_robot(request):
     # all_body_elements means how much body variations you have for each variant (hostile, friendly)
     all_body_elements = 3
 
+    # amount_body_elements and all_body_elements are different because first one is selected by user when he is
+    # submitting a form and second one informs system of how many body element variations you have in general available
+    # for both hostile and friendly variant
+
     legs_number = "legs_" + str(random.randint(1, 3)) + img_format
     id_cloud_number = 1
     for x in range(1, 4):
@@ -34,8 +38,8 @@ def your_robot(request):
         globals()["id_cloud_{0}".format(x)] = f"""id_cloud_{id_cloud_number}"""
         id_cloud_number += 1
 
+    # Variants of message for user based on chosen robot_type
     hostile_variants = list("!@#$%^&*<>?{}[]|\/-_=+")
-
     friendly_variants = ["Blip ", "Blap ", "Blop ", "Pip ", "Bip ", "Clank "]
 
     message_length = random.randint(3, 7)
@@ -43,14 +47,15 @@ def your_robot(request):
     message = ""
     id_body_number = 1
 
+    # Determining hostile robot type items
     if robot_type == "hostile":
         for variant in range(message_length):
-
             message += random.choice(hostile_variants)
         variant_option = "_hostile"
         message += " !!11! "
         head_number += variant_option + img_format
 
+    # Determining friendly robot type items
     if robot_type == "friendly":
         for variant in range(message_length):
             message += random.choice(friendly_variants)
@@ -58,13 +63,13 @@ def your_robot(request):
         message += "^.^ "
         head_number += variant_option + img_format
 
-    for x in range(1, amount_body_elements + 1):
+    # for loop for generating all body_element and id_body for img href and id
+    for x in range(1, all_body_elements + 1):
         globals()["body_element_{0}".format(x)] = "body_element_" + str(random.randint(1, all_body_elements)) + variant_option + img_format
         globals()["id_body_{0}".format(x)] = f"""id_body_{id_body_number}"""
         id_body_number += 1
 
         message += str(user_message)
-
 
     return render(request, "builder/your_robot.html", {"message": message, "head_number": head_number,
                                                        "body_element_1": body_element_1,
