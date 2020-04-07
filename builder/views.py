@@ -33,8 +33,8 @@ def your_robot(request):
     legs_number = "legs_" + str(random.randint(1, 3)) + img_format
     id_cloud_number = 1
     for x in range(1, 4):
-        globals()["cloud_number_{0}".format(x)] = '<img src="/media/' + "cloud_" + str(
-            random.randint(1, 3)) + img_format + """" onerror="this.style.display='none'" width='25' """ + f"""id='id_cloud_{id_cloud_number}'""" + "><br>"
+        globals()["cloud_number_{0}".format(x)] = "cloud_" + str(random.randint(1, 3)) + img_format
+        globals()["id_cloud_{0}".format(x)] = f"""id_cloud_{id_cloud_number}"""
         id_cloud_number += 1
 
     hostile_variants = list("!@#$%^&*<>?{}[]|\/-_=+")
@@ -62,8 +62,8 @@ def your_robot(request):
         head_number += variant_option + img_format
 
     for x in range(1, amount_body_elements + 1):
-        globals()["body_element_{0}".format(x)] = '<img src="/media/' + "body_element_" + str(
-            random.randint(1, all_body_elements)) + variant_option + img_format + """" onerror="this.style.display='none'" width='200' """ + f"""id='id_body_{id_body_number}'""" + "><br>"
+        globals()["body_element_{0}".format(x)] = "body_element_" + str(random.randint(1, all_body_elements)) + variant_option + img_format
+        globals()["id_body_{0}".format(x)] = f"""id_body_{id_body_number}"""
         id_body_number += 1
 
         message += str(user_message)
@@ -72,6 +72,12 @@ def your_robot(request):
                                                        "body_element_1": body_element_1,
                                                        "body_element_2": body_element_2,
                                                        "body_element_3": body_element_3,
+                                                       "id_body_1": id_body_1,
+                                                       "id_body_2": id_body_2,
+                                                       "id_body_3": id_body_3,
+                                                       "id_cloud_1": id_cloud_1,
+                                                       "id_cloud_2": id_cloud_2,
+                                                       "id_cloud_3": id_cloud_3,
                                                        "robot_id": robot_id,
                                                        "legs_number": legs_number,
                                                        "cloud_number_1": cloud_number_1,

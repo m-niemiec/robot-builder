@@ -1,3 +1,14 @@
+@media only screen and (max-width: 800px) {
+h1 {
+font-size: 2em !important;
+}
+#randomize {
+scale: 0.75;
+}
+img.robot_images { width: 170px; }
+img.comic_bubble { width: 93px; }
+}
+
 html {
      background: #343a40;
 }
@@ -10,7 +21,7 @@ html {
  div.navbar-nav {
      color: 00ff00;
 }
- .carousel-control-next, .carousel-control-prev {
+ .carousel-control-next, .carousel-control-prev , .carousel-indicators{
      filter: invert(100%);
 }
  img#head {
@@ -61,9 +72,9 @@ html {
      top: 50%;
      left: 0%;
 }
- img#id_cloud_1 {
+ #id_cloud_1 {
      position: absolute;
-     bottom: 700%;
+     bottom: 500px;
      left: 55%;
      scale: 14;
      z-index: 11;
@@ -72,10 +83,10 @@ html {
      -moz-transition: opacity 1s ease-in-out;
      -webkit-transition: opacity 1s ease-in-out;
 }
- img#id_cloud_2 {
+ #id_cloud_2 {
      position: absolute;
      left: 45%;
-     bottom: 450%;
+     bottom: 250px;
      scale: 14;
      z-index: 12;
      opacity: 1;
@@ -83,10 +94,10 @@ html {
      -moz-transition: opacity 1.5s ease-in-out;
      -webkit-transition: opacity 1.5s ease-in-out;
 }
- img#id_cloud_3 {
+ #id_cloud_3 {
      position: absolute;
      left: 50%;
-     bottom: 150%;
+     bottom: 50px;
      scale: 14;
      z-index: 13;
      opacity: 1;
