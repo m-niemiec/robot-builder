@@ -1,110 +1,158 @@
-@media only screen and (max-width: 800px) {
-h1 {
-font-size: 2em !important;
-}
-#randomize {
-scale: 0.75;
-}
-img.robot_images { width: 170px; }
-img.comic_bubble { width: 93px; }
+@media only screen and (max-width: 700px) {
+	h1 {
+		font-size: 2em !important;
+	}
+	#randomize {
+		scale: 0.75;
+	}
+	img.robot_images {
+		width: 100px;
+	}
+    img.comic_bubble {
+		width: 50px;
+		position: relative;
+		left: 10%;
+		top: -100px;
+	}
+	#comic_bubble_text {
+		font-size: 0.6em !important;
+		top: -118px !important;
+	}
+	#id_cloud_1 {
+		width: 12px;
+		bottom: 25px !important;
+    }
+    #id_cloud_2 {
+		width: 12px;
+		bottom: 140px !important;
+    }
+    #id_cloud_3 {
+		width: 12px;
+		bottom: 280px !important;
+    }
 }
 
 html {
-     background: #343a40;
+	background: #343a40;
 }
- h3 {
-     color: #343a40;
+
+h3 {
+	color: #343a40;
 }
- p {
-     color: #343a40;
+
+p {
+	color: #343a40;
 }
- div.navbar-nav {
-     color: 00ff00;
+
+div.navbar-nav {
+	color: 00ff00;
 }
- .carousel-control-next, .carousel-control-prev , .carousel-indicators{
-     filter: invert(100%);
+
+.carousel-control-next,
+.carousel-control-prev,
+.carousel-indicators {
+	filter: invert(100%);
 }
- img#head {
-     scale: 3.5;
-     z-index: 5;
+
+img#head {
+	position: relative;
+	transform: scale(3.5);
+	z-index: 5;
 }
- img#id_body_1 {
-     scale: 3.1;
-     z-index: 4;
+
+img#id_body_1 {
+	position: relative;
+	transform: scale(3.1);
+	z-index: 4;
 }
- img#id_body_2 {
-     scale: 3.1;
-     z-index: 3;
+
+img#id_body_2 {
+	position: relative;
+	transform: scale(3.1);
+	z-index: 3;
 }
- img#id_body_3 {
-     scale: 3.1;
-     z-index: 2;
+
+img#id_body_3 {
+	position: relative;
+	transform: scale(3.1);
+	z-index: 2;
 }
- img#legs {
-     scale: 3;
-     z-index: 1;
+
+img#legs {
+	position: relative;
+	transform: scale(3);
+	z-index: 1;
 }
- img#comic_bubble {
-     position: relative;
-     left: 25%;
-     top: -50px;
-     scale: 3.5;
-     z-index: 6;
+
+img#comic_bubble {
+	position: relative;
+	left: 25%;
+	top: -50px;
+	transform: scale(3.5);
+	z-index: 6;
 }
- #comic_bubble_text {
-     position: relative;
-     left: 24%;
-     top: -180px;
-     scale: 1;
-     z-index: 999;
-     width: 300px;
-     overflow-wrap: break-word;
-     height: 0;
+
+#comic_bubble_text {
+	position: relative;
+	left: 24%;
+	top: -180px;
+	transform: scale(1);
+	z-index: 999;
+	width: 300px;
+	overflow-wrap: break-word;
+	height: 0;
 }
- img#myimage {
-     position: relative;
-     left: 25%;
-     scale: 16;
-     z-index: 9;
+
+img#myimage {
+	position: relative;
+	left: 25%;
+	transform: scale(16);
+	z-index: 9;
 }
- #fadeout {
-     position: relative;
-     top: 50%;
-     left: 0%;
+
+#fadeout {
+	position: relative;
+	top: 50%;
+	left: 0%;
 }
- #id_cloud_1 {
-     position: absolute;
-     bottom: 500px;
-     left: 55%;
-     scale: 14;
-     z-index: 11;
-     opacity: 1;
-     transition: opacity 1s ease-in-out;
-     -moz-transition: opacity 1s ease-in-out;
-     -webkit-transition: opacity 1s ease-in-out;
+
+#id_cloud_1 {
+	position: absolute;
+	bottom: 500px;
+	left: 55%;
+	transform: scale(14);
+	z-index: 11;
+	opacity: 1;
+	transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-webkit-transition: opacity 1s ease-in-out;
 }
- #id_cloud_2 {
-     position: absolute;
-     left: 45%;
-     bottom: 250px;
-     scale: 14;
-     z-index: 12;
-     opacity: 1;
-     transition: opacity 1.5s ease-in-out;
-     -moz-transition: opacity 1.5s ease-in-out;
-     -webkit-transition: opacity 1.5s ease-in-out;
+
+#id_cloud_2 {
+	position: absolute;
+	left: 45%;
+	bottom: 250px;
+	transform: scale(14);
+	z-index: 12;
+	opacity: 1;
+	transition: opacity 1.5s ease-in-out;
+	-moz-transition: opacity 1.5s ease-in-out;
+	-webkit-transition: opacity 1.5s ease-in-out;
 }
- #id_cloud_3 {
-     position: absolute;
-     left: 50%;
-     bottom: 50px;
-     scale: 14;
-     z-index: 13;
-     opacity: 1;
-     transition: opacity 2s ease-in-out;
-     -moz-transition: opacity 2s ease-in-out;
-     -webkit-transition: opacity 2s ease-in-out;
+
+#id_cloud_3 {
+	position: absolute;
+	left: 50%;
+	bottom: 50px;
+	transform: scale(14);
+	z-index: 13;
+	opacity: 1;
+	transition: opacity 2s ease-in-out;
+	-moz-transition: opacity 2s ease-in-out;
+	-webkit-transition: opacity 2s ease-in-out;
 }
- #randomize {
-     z-index: 999;
+
+#randomize {
+	position: relative;
+	z-index: 999;
 }

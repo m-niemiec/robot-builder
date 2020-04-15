@@ -2,3 +2,7 @@
 *.pot
 *.pyc
 __pycache__/
+.env
+Lib/
+Scripts/
+.idea/
