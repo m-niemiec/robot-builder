@@ -85,7 +85,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
     }
 }
-
+# If you want to work with your remote database on your local machine, you need to paste link from heroku lower:
 # DATABASES['default'] = dj_database_url.config(default='postgres://qkwlkrkahynyik:21a1420ab5820795f3a0c736ebb607419fc7a111f093924dcfc4567dfd906b9f@ec2-54-147-209-121.compute-1.amazonaws.com:5432/d2v01dp40p4er2')
 
 db_from_env = dj_database_url.config(conn_max_age=600)
