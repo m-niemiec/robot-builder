@@ -6,3 +6,7 @@ __pycache__/
 Lib/
 Scripts/
 .idea/
+staticfiles/admin
+staticfiles/builder
+staticfiles/css
+staticfiles/staticfiles.json
