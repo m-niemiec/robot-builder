@@ -36,6 +36,11 @@ html {
 	background: #343a40;
 }
 
+body {
+	width: 100vw;
+	overflow-x: hidden;
+}
+
 h3 {
 	color: #343a40;
 }
