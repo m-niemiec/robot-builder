@@ -6,7 +6,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <meta charset="UTF-8">
     <title>Robot Builder</title>
@@ -18,38 +19,48 @@
     <div class="container">
         <h1 class="display-4">{{ robot_id }}
             <!--Button for reloading page to randomize robot elements again-->
-            <br><button type="button" onClick="window.location.reload();" class="btn btn-info btn-lg" id="randomize">Randomize again!</button>
+            <br><button type="button" onClick="window.location.reload();" class="btn btn-info btn-lg"
+                        id="randomize">Randomize again!</button>
         </h1>
         <p class="lead">
             <br><br><center>
             <!--Comic bubble with message for user that appears over robot head-->
-            <img src="{% static 'builder/comic_bubble.png' %}" alt="Comic Text Bubble" width="100" class="comic_bubble" id="comic_bubble"><br>
+            <img src="{% static 'builder/comic_bubble.png' %}" alt="Comic Text Bubble" width="100"
+                 class="comic_bubble" id="comic_bubble"><br>
             <div id="comic_bubble_text">
         {{ message }}</p>
     </div>
     <!--Random robot head-->
-    <img src="{% with 'builder/'|add:head_number as image_static %} {% static image_static %} {% endwith %}" alt="{{ head_number }}" class="robot_images" width="200" id="head"><br>
+    <img src="{% with 'builder/'|add:head_number as image_static %} {% static image_static %} {% endwith %}"
+         alt="{{ head_number }}" class="robot_images" width="200" id="head"><br>
     <!--Random robot body#1-->
     {% if amount_body_elements > 0 %}
-        <img src="{% with 'builder/'|add:body_element_1 as image_static %} {% static image_static %} {% endwith %}" alt="{{ body_element_1 }}" class="robot_images" width="200" id="{{ id_body_1 }}" onerror="this.style.display = 'none'"><br>
+        <img src="{% with 'builder/'|add:body_element_1 as image_static %} {% static image_static %} {% endwith %}"
+             alt="{{ body_element_1 }}" class="robot_images" width="200" id="{{ id_body_1 }}" onerror="this.style.display = 'none'"><br>
     {% endif %}
     <!--Random robot body#2-->
     {% if amount_body_elements > 1 %}
-        <img src="{% with 'builder/'|add:body_element_2 as image_static %} {% static image_static %} {% endwith %}" alt="{{ body_element_2 }}" class="robot_images" width="200" id="{{ id_body_2 }}" onerror="this.style.display = 'none'"><br>
+        <img src="{% with 'builder/'|add:body_element_2 as image_static %} {% static image_static %} {% endwith %}"
+             alt="{{ body_element_2 }}" class="robot_images" width="200" id="{{ id_body_2 }}" onerror="this.style.display = 'none'"><br>
     {% endif %}
     <!--Random robot body#3-->
     {% if amount_body_elements > 2 %}
-        <img src="{% with 'builder/'|add:body_element_3 as image_static %} {% static image_static %} {% endwith %}" alt="{{ body_element_3 }}" class="robot_images" width="200" id="{{ id_body_3 }}" onerror="this.style.display = 'none'"><br>
+        <img src="{% with 'builder/'|add:body_element_3 as image_static %} {% static image_static %} {% endwith %}"
+             alt="{{ body_element_3 }}" class="robot_images" width="200" id="{{ id_body_3 }}" onerror="this.style.display = 'none'"><br>
     {% endif %}
     <!--Random robot legs-->
-    <img src="{% with 'builder/'|add:legs_number as image_static %} {% static image_static %} {% endwith %}" alt="{{ legs_number }}" class="robot_images" width="200" id="legs">
+    <img src="{% with 'builder/'|add:legs_number as image_static %} {% static image_static %} {% endwith %}"
+         alt="{{ legs_number }}" class="robot_images" width="200" id="legs">
     <!--Clouds that appear when you refresh window to randomize robots element again. They are disappearing quickly.-->
     <div id="fadeout">
         {% if amount_body_elements > 1 %}
-            <img src="{% with 'builder/'|add:cloud_number_1 as image_static %} {% static image_static %} {% endwith %}" alt="{{ cloud_number_1 }}" class="cloud" width="25" id="{{ id_cloud_1 }}" onerror="this.style.display = 'none'">
+            <img src="{% with 'builder/'|add:cloud_number_1 as image_static %} {% static image_static %} {% endwith %}"
+                 alt="{{ cloud_number_1 }}" class="cloud" width="25" id="{{ id_cloud_1 }}" onerror="this.style.display = 'none'">
         {% endif %}
-        <img src="{% with 'builder/'|add:cloud_number_2 as image_static %} {% static image_static %} {% endwith %}" alt="{{ cloud_number_2 }}" class="cloud" width="25" id="{{ id_cloud_2 }}" onerror="this.style.display = 'none'">
-        <img src="{% with 'builder/'|add:cloud_number_3 as image_static %} {% static image_static %} {% endwith %}" alt="{{ cloud_number_3 }}" class="cloud" width="25" id="{{ id_cloud_3 }}" onerror="this.style.display = 'none'">
+        <img src="{% with 'builder/'|add:cloud_number_2 as image_static %} {% static image_static %} {% endwith %}"
+             alt="{{ cloud_number_2 }}" class="cloud" width="25" id="{{ id_cloud_2 }}" onerror="this.style.display = 'none'">
+        <img src="{% with 'builder/'|add:cloud_number_3 as image_static %} {% static image_static %} {% endwith %}"
+             alt="{{ cloud_number_3 }}" class="cloud" width="25" id="{{ id_cloud_3 }}" onerror="this.style.display = 'none'">
     </div>
     </center>
     <!--Javascript that I used for making cloud from before disappear after given amount of ms. Opacity from 1 to 0.-->

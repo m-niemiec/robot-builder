@@ -69,7 +69,7 @@ def your_robot(request):
         globals()["id_body_{0}".format(x)] = f"""id_body_{id_body_number}"""
         id_body_number += 1
 
-        message += str(user_message)
+    message += str(user_message)
 
     return render(request, "builder/your_robot.html", {"message": message, "head_number": head_number,
                                                        "body_element_1": body_element_1,

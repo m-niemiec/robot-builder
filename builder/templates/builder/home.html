@@ -6,7 +6,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <meta charset="UTF-8">
     <title>Robot Builder</title>
@@ -21,7 +22,7 @@
         <hr class="my-4">
         <center>
 
-            <a href="{% url "builder" %}" class="btn btn-success btn-lg" role="button">Build your own robot !</a><br><br>
+            <a href="{% url 'builder' %}" class="btn btn-success btn-lg" role="button">Build your own robot !</a><br><br>
             <!-- Button trigger modal with "help" for user-->
             <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
                 Help! I don't know what to do. Wh - what am I doing in this reality?
@@ -38,11 +39,14 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <p><b>Nothing is happening. You are on this site for fun, and you can build your robot here.</b></p> <br><br>
+                            <p><b>Nothing is happening. You are on this site for fun, and you can build your robot here.
+                            </b></p> <br><br>
                             <ul>
-                                <li>If you want to build your robot, simply click "Build your own robot!" (big green button above this one)</li><br>
+                                <li>If you want to build your robot, simply click "Build your own robot!"
+                                    (big green button above this one)</li><br>
                                 <li>If you want to close, press "close".</li><br>
-                                <li>If you don't know what are you doing in general, seek for help, I am simple website written on Django with help of Python, HTML, CSS, BootStrap and a little bit of JavaScript. I cannot help you.</li>
+                                <li>If you don't know what are you doing in general, seek for help, I am simple website
+                                    written on Django with help of Python, HTML, CSS, BootStrap and a little bit of JavaScript. I cannot help you.</li>
                             </ul><br><br>
 
                             <b>F.A.Q - Our frequently asked questions:</b><br><br>
@@ -53,7 +57,8 @@
                             <b>A:</b> Happily, no. This robots are not real, they won't hurt you.<br><br>
 
                             <b>Q:</b> If I have question that wasn't listed here, where can I ask them?<br>
-                            <b>A:</b> You can send me a question or anything on this email address - <b>michal.niemiec.it *at* gmail.com</b> Do not hesitate, thank you.</p>
+                            <b>A:</b> You can send me a question or anything on this email address -
+                            <b>michal.niemiec.it *at* gmail.com</b> Do not hesitate, thank you.</p>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -106,9 +111,12 @@
 </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </body>
 </html>
 
