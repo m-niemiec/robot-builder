@@ -8,7 +8,7 @@ HTML, CSS, BootStrap and a little bit of JavaScript.
 On this website you can build your own robot. You can choose if you want friendly or hostile one. Choose it's name, height 
 and message for you. And then, you can randomize until you will find combination that you like!
 
-(unfortunately, this site is no longer available online)
+Previously, this website was also available online, being hosted on Heroku.
 
 Cheers!
 
